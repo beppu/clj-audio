@@ -20,7 +20,7 @@
 
 ;;;; Audio formats
 
-(def ^:dynamic *default-format* 
+(def ^:dynamic *default-format*
   (make-format
    {:encoding :pcm-signed
     :sample-rate 44100
@@ -130,22 +130,22 @@
 
 (def default-buffer-size (* 64 1024))
 
-(def ^:dynamic *line-buffer-size* 
+(def  ^:dynamic  *line-buffer-size*
   "Line buffer size in bytes, must correspond to an integral number of
   frames."
   default-buffer-size
-)
-
-(def ^:dynamic *playback-buffer-size* 
-"Playback buffer size in bytes."
-  default-buffer-size
   )
 
-(def ^:dynamic *playing* 
+(def  ^:dynamic  *playback-buffer-size*
+  "Playback buffer size in bytes."
+  default-buffer-size
+ )
+
+(def  ^:dynamic  *playing*
   "Variable telling if play* is currently writing to a line. If set to
   false during playback, play* will exit."
   (ref false)
-)
+  )
 
 (defn play*
   "Write the given audio stream bytes to the given source data line

@@ -84,7 +84,7 @@
 
 ;;;; Mixer
 
-(def ^:dynamic *mixer* 
+(def ^:dynamic *mixer*
   "Mixer to be be used by functions creating lines, if nil let the
   system decides which mixer to use." nil)
 
@@ -95,7 +95,7 @@
 
 ;;;; Line
 
-(def ^:private line-types 
+(def ^:private line-types
   {:clip   Clip
    :input  TargetDataLine
    :output SourceDataLine

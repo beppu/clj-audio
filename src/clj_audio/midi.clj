@@ -9,7 +9,11 @@
 (ns #^{:author "Nicolas Buduroi"
        :doc "Wrapper for Java Sound API's midi package."}
   clj-audio.midi
+<<<<<<< HEAD
   (:use clj-audio.utils)
+=======
+  (:use clj-audio.utils) 
+>>>>>>> refresh
   (:import java.io.File
            [javax.sound.midi
             MidiUnavailableException
