@@ -1,6 +1,10 @@
 
 # clj-audio
 
+```
+[org.clojars.beppu/clj-audio "0.3.0"]
+```
+
 This library is a general purpose audio library built on top of the Java
 Sound API. It comprises wrappers for JSA's `sampled` and `midi` packages
 in the corresponding namespaces. It also include a higher level API for
@@ -20,7 +24,7 @@ Playing a wave file.
 
 Playing a MP3 file, this example requires some extra libraries, see
 "Installation" below.
-    
+
     (-> (->stream "~/test.mp3") decode play)
 
 Decoding a MP3 file and writing it to a WAVE file.
@@ -59,7 +63,7 @@ file format given the corresponding SPI and adding their extensions to
 
  * Skipping an encoded stream then writing its decoded output to a file
    using the write function will produce an empty file.
-    
+
 ## Installation
 
 This library is available on [Clojars]. To use clj-audio in your
